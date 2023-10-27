@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.min.js" ></script>
+    <script src="script.js"></script>
+    
+    <link rel="stylesheet" href="style.css"> 
+    
+    <title>Random password generator</title>
+    <style>
+       
+    </style>
+</head>
+<body class="container-fluid  text-light">
+  
+    <main>   
+        <span id="title"><h2>Random Password Generator</h2></span>
+<input type="text" value="" id="myInput" class="entry" readonly>
+<button class="entry"  id="Generator">Generate</button>
+<button class="entry"  id="copybuttn" data-toggle="modal" data-target="#myModal" >Copy Password</button>
+<div id="rangecon">
+   <p>Length:</p>
+    <input type="range" min="1" max="50" id="length">
+    <p></p>
+</div>
+
+
+<div id="boxes">
+    <span>   <input type="checkbox" name="" id="Symbols" checked> <label for="Symbols">Symbols</label></span>
+    <span>   <input type="checkbox" name="" id="UpperCase" checked>  <label for="UpperCase">UpperCase</label></span>
+    <span><input type="checkbox" name="" id="SmallCase" checked> <label for="SmallCase">SmallCase</label></span>
+    <span>  <input type="checkbox" name="" id="Numbers" checked> <label for="Numbers">Numbers</label></span>
+ 
+
+</div>
+
+</main>
+
+<div class="container-fluid"> 
+    
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+    
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title"></h4>
+          </div>
+          <div class="modal-body text-center">
+            <p>Copied.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+    
+      </div>
+    </div></div>
+
+    
+
+
+</body>
+</html>
